@@ -1,0 +1,121 @@
+\documentclass[10pt]{beamer}
+\usetheme{Berkeley}
+\usecolortheme{beaver}
+\usepackage{helvet}
+\usepackage{tikz}
+%\usefonttheme{structuresmallcapsserif}
+
+\begin{document}
+
+%info in title page
+\title{Maximum Bipartite Matching}
+\author{Nafiz Imtiaz, Abrar Fahim, S. S. Somik}
+\institute{Department of CSE, BUET, Dhaka 1000, Bangladesh}
+\date{\today}
+\subtitle{CSE 300 Presentation}
+
+\begin{frame}
+    \frametitle{title}
+    
+	First 2 slides contain sample blocks, columns and stuff
+    
+    \begin{block}{Remark}
+    in block
+    \end{block}
+    
+    \begin{alertblock}{important theorem}
+    in alertblock
+    \end{alertblock}
+    
+    \begin{examples} 
+    in users block
+    \end{examples}
+    
+    text in frame
+    
+    \alert{this is alert}
+
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{columns}
+	\begin{columns}
+		\column{0.5\textwidth}
+		text in first column
+		 $$E = mc^2$$
+		\begin{itemize}
+			
+			\item first item
+			\item hello there
+		\end{itemize}
+		
+		\column{0.5\textwidth}
+		text in second column
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Real World Applications}
+\end{frame}
+
+\frame{\titlepage}
+
+\begin{frame}
+	\frametitle{Bipartite Graph Definition}
+	
+	\begin{tikzpicture}
+		\draw (1,2) -- (2,4);
+		\node{1};
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Maximum Matching}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Max Flow Problem Overview}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Relating Max Flow Problem with Maximum Matching}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Max Flow problem Algorithm}
+	\begin{itemize}
+		\item solving max flow using ford fulkerson takes O(ef*) time, where f* = max flow, but in our problem, f* = n = no of vertices
+		and no of edges = m + 2n, m = no of edges in bipartite graph and 2n edges are added later to convert the problem into max flow problem. So running time$$ = O((m + 2n)n) = O(mn + n^2) = O(mn) $$
+		
+		
+		\item but, we can use a simpler way to solve this since edges are unweighted, although we get same time complexity
+		
+		\item even simpler way is a recursive way which is shown as "Alternative approach" in the fancy slides from the internet
+
+	\end{itemize}
+	
+		
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Solving Main Problem}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Time Complexity}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Alternate solutions}
+\end{frame}
+
+\begin{frame}
+	\frametitle{References}
+\end{frame}
+	
+	
+\end{document}
